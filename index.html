@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blink-hard {
+            animation: hardBlink 1s step-end infinite;
+        }
+        @keyframes hardBlink {
+            50% {
+                opacity: 0;
+                }
+        }
+        button{
+            display: block;
+            margin: auto
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color: red; text-align: center; " class="blink-hard">
+        Setup : <span id="getSetup"></span>
+    </h3>
+    <h4 style="color: blue; text-align: center;">
+        Punchline : <span id="getPunchline"></span>
+    </h4>
+    <button onclick="getRandomJoke()">Get New Joke</button>
+
+    <script src="./random_joke.js"></script>
+</body>
+</html>
